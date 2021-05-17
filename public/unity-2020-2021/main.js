@@ -1,6 +1,5 @@
 import yaml from '../lib/js-yaml.js'
 import html from '../src/html.js'
-import './initial.js'
 import { windowLoad } from '../src/utils.js'
 
 
