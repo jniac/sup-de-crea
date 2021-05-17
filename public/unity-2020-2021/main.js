@@ -23,18 +23,19 @@ const update = (data) => {
   const editable = window.location.href.includes('localhost')
   
   for (const student of data.students) {
-    const { email, names, comment, note, extraComment } = student
+    const { email, names, link, comment, note, extraComment } = student
     const [firstname, lastname] = names.split(/\s*,\s*/)
     const div = html/* html */`
       <div class="student row" data-email="${email}">
         <div contenteditable="${editable}" class="name">${firstname}</div>
+        <div contenteditable="${editable}" class="link button">${link}</div>
         <div contenteditable="${editable}" class="comment">${comment}</div>
         <div contenteditable="${editable}" class="extra-comment">${extraComment}</div>
         <div contenteditable="${editable}" class="note-abc">${note}</div>
         <div contenteditable="${editable}" class="note-20">${noteTable(note)}/20</div>
       </div>
     `
-
+    div.querySelector('.link').onclick = () => window.location.href = link
     div.classList.toggle('has-extra-comment', !!extraComment)
     mainElement.append(div)
   }
@@ -69,6 +70,7 @@ const main = async () => {
     for (const div of document.querySelectorAll('.student')) {
       const { email } = div.dataset
       const student = getStudentByEmail(email)
+      student.link = div.querySelector('.link').innerText
       student.comment = div.querySelector('.comment').innerText
       student.extraComment = div.querySelector('.extra-comment').innerText
       student.note = div.querySelector('.note-abc').innerText

@@ -25,6 +25,7 @@ main .student + .student {
 }
 main .student > div {
   padding: 8px;
+  text-align: center;
 }
 main .student > div + div {
   border-left: var(--border);
@@ -32,6 +33,15 @@ main .student > div + div {
 
 main .student .name {
   flex: 0 0 200px;
+}
+main .student .link {
+  font-size: 10px;
+  flex: 0 0 200px;
+  overflow: hidden;
+  line-break: anywhere;
+}
+main .student .link:hover {
+  color: blue;
 }
 main .student .comment {
   text-align: center;
