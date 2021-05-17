@@ -5,10 +5,12 @@ students:
     email: louis.biousse@supdecreation.com
     link: https://github.com/LBiousse/Premier-projet
     comment: >-
-      Des screenshots intéressants dans la page Github, mais un projet plus
-      simple, trop simple. Passable.
-    note: C
-    extraComment: En attente de correction
+      Un début de parcours, malheureusement injouable (mais vraiment, Flappy
+      Bird est plus simple).
+
+      On regrette le minimalisme de la direction artistique.
+    note: B
+    extraComment: ''
   - names: Duncan,CHAUVIN
     birthday: 13/09/2001
     gender: M

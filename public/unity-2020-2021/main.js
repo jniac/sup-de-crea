@@ -28,14 +28,13 @@ const update = (data) => {
     const div = html/* html */`
       <div class="student row" data-email="${email}">
         <div contenteditable="${editable}" class="name">${firstname}</div>
-        <div contenteditable="${editable}" class="link button">${link}</div>
-        <div contenteditable="${editable}" class="comment">${comment}</div>
+        <div contenteditable="${editable && !link}" class="link"><a href="${link}">${link}</a></div>
+        <div contenteditable="${editable}" class="comment">${comment.replace('\n', '<br>')}</div>
         <div contenteditable="${editable}" class="extra-comment">${extraComment}</div>
         <div contenteditable="${editable}" class="note-abc">${note}</div>
         <div contenteditable="${editable}" class="note-20">${noteTable(note)}/20</div>
       </div>
     `
-    div.querySelector('.link').onclick = () => window.location.href = link
     div.classList.toggle('has-extra-comment', !!extraComment)
     mainElement.append(div)
   }
