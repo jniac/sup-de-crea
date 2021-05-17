@@ -1,0 +1,51 @@
+@import url(../style/style.css);
+
+body {
+  padding: 0;
+}
+
+header, footer {
+  padding: 64px;
+}
+
+main {
+  margin: 16px;
+  --border: #ccc solid 1px;
+  border: var(--border);
+}
+main .student {
+  height: 100px;
+  align-items: stretch;
+} 
+main .student.has-extra-comment {
+  background-color: #ff9;
+} 
+main .student + .student {
+  border-top: var(--border);
+}
+main .student > div {
+  padding: 8px;
+}
+main .student > div + div {
+  border-left: var(--border);
+}
+
+main .student .name {
+  flex: 0 0 200px;
+}
+main .student .comment {
+  text-align: center;
+}
+main .student .extra-comment {
+  text-align: center;
+  flex: 0;
+}
+main .student [class^="note"] {
+  flex: 0 0 60px;
+}
+main .student .note-abc {
+  font-size: 16px;
+}
+main .student .note-20 {
+  font-size: 10px;
+}

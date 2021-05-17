@@ -1,0 +1,145 @@
+students:
+  - names: Louis,BIOUSSE
+    birthday: 04/07/2001
+    gender: M
+    email: louis.biousse@supdecreation.com
+    link: https://github.com/LBiousse/Premier-projet
+    comment: >-
+      Des screenshots intéressants dans la page Github, mais un projet plus
+      simple, trop simple. Passable.
+    note: C
+    extraComment: En attente de correction
+  - names: Duncan,CHAUVIN
+    birthday: 13/09/2001
+    gender: M
+    email: duncan.chauvin@supdecreation.com
+    link: https://github.com/chocex/premier-pas
+    comment: >-
+      Plutôt à l'aise avec le code et la technique. Allant peut-être un peu trop
+      vite parfois, s'égarant en conséquence. Motivé, appliqué.
+    note: A
+    extraComment: ''
+  - names: Laura,DEBEAU
+    birthday: 13/09/2001
+    gender: F
+    email: laura.debeau@supdecreation.com
+    link: https://github.com/lorah91/New-Unity-Project
+    comment: >-
+      Des difficultés avec le code et la technique. Bonne motivation par
+      ailleurs. Un travail intéressant (couleurs, composition).
+    note: B
+    extraComment: ''
+  - names: Marion,DOERFLINGER
+    birthday: 04/09/1996
+    gender: F
+    email: marion.doerflinger@supdecreation.com
+    link: https://github.com/Marion-DoBr/Premiers-pas
+    comment: >-
+      De chouettes assets (arbres), bonne maîtrise de ProBuilder, un effort de
+      LevelDesign, des scripts inédits (camera follow). Excellent.
+    note: A+
+    extraComment: ''
+  - names: Millan,DUPIN
+    birthday: 02/10/1995
+    gender: M
+    email: millan.dupin@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: Yasmine,FANOUNI
+    birthday: 26/01/2000
+    gender: F
+    email: yasmine.fanouni@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: Axel,FAUBERT
+    birthday: 11/06/2002
+    gender: M
+    email: axel.faubert@supdecreation.com
+    link: https://github.com/Axelito181/Premier-pas-Unity
+    comment: >-
+      Des difficultés avec le code et la technique. Très bonne motivation et
+      implication en classe. Un travail inégal, mais présentant des recherches
+      intéressantes.
+    note: B
+    extraComment: ''
+  - names: Elliot,FENECH
+    birthday: 31/03/2001
+    gender: M
+    email: elliot.fenech@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: Killiane,GAUDAS
+    birthday: 21/07/2002
+    gender: F
+    email: killiane.gaudas@supdecreation.com
+    link: https://github.com/KillianeG-21/RenduUnity.git
+    comment: >-
+      Un éclairage réussi, un usage original des scripts, un sens de la
+      débrouille et du bricolage digital. C'est bien.
+    note: A
+    extraComment: ''
+  - names: Guillaume,GAUDUCHON
+    birthday: 25/02/2002
+    gender: M
+    email: guillaume.gauduchon@supdecreation.com
+    link: https://github.com/GuillaumeGauduchon/Premier-pas
+    comment: >-
+      "À l'aise avec la technique, le code, force de proposition, autonome.
+      Propose son aide au reste de la classe. Excellent."
+    note: A+
+    extraComment: ''
+  - names: Louison,GILLES
+    birthday: 24/11/2002
+    gender: M
+    email: louison.gilles@supdecreation.com
+    link: https://github.com/Dess91/1er-pas
+    comment: >-
+      Un level design, un peu triste certes (tout gris), mais un parcours tout
+      de même.
+    note: B
+    extraComment: ''
+  - names: Melvyn,KEOXAY
+    birthday: 04/08/2001
+    gender: M
+    email: melvyn.keoxay@supdecreation.com
+    link: https://github.com/Melvynkayy/1er-projet-Unity
+    comment: >-
+      Des difficultés avec le code, la technique, paraît débordé par la quantité
+      d'informations, d'options à disposition. Malgré cela bonne motivation,
+      joli projet. C'est bien.
+    note: B
+    extraComment: ''
+  - names: Fabienne,LAILLET
+    birthday: 27/03/2002
+    gender: F
+    email: fabienne.laillet@supdecreation.com
+    link: https://github.com/flaillet/Premier-pas-fabienne-laillet
+    comment: >-
+      Un bon travail rendu (couleurs, composition). Malgré des difficultés
+      exprimées liées au confinement la technique demandée paraît acquise.
+    note: A
+    extraComment: ''
+  - names: Mickaël,MIGOUT
+    birthday: 09/07/2001
+    gender: M
+    email: mickael.migout@supdecreation.com
+    link: https://github.com/mickaelmigout/Premiers-Pas-Unity
+    comment: >-
+      Projet Unity / Github désordonné (fichiers pas au bon endroit) que
+      s'est-il passé ? 1 seule capture d'écran. Pas ou peu de recherche
+      graphique. C'est dommage.
+    note: C
+    extraComment: ''
+  - names: Steven,OUK
+    birthday: 14/07/2002
+    gender: M
+    email: steven.ouk@supdecreation.com
+    comment: ''
+    note: ''
+    extraComment: ''
