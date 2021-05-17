@@ -44,8 +44,8 @@ students:
     gender: M
     email: millan.dupin@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: absent
+    note: Z
     extraComment: ''
   - names: Yasmine,FANOUNI
     birthday: 26/01/2000
@@ -143,3 +143,4 @@ students:
     comment: ''
     note: ''
     extraComment: ''
+    link: ''
