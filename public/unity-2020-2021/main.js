@@ -64,19 +64,34 @@ const main = async () => {
 
   const getStudentByEmail = (email) => data.students.find(student => student.email === email)
 
-  document.querySelector('button#yaml').onclick = () => {
-
+  const updateData = () => {
     for (const div of document.querySelectorAll('.student')) {
       const { email } = div.dataset
       const student = getStudentByEmail(email)
-      student.link = div.querySelector('.link').innerText
-      student.comment = div.querySelector('.comment').innerText
-      student.extraComment = div.querySelector('.extra-comment').innerText
-      student.note = div.querySelector('.note-abc').innerText
+      const extract = (cls) => div.querySelector(cls).innerText
+      Object.assign(student, {
+        link: extract('.link'),
+        comment: extract('.comment'),
+        extraComment: extract('.extra-comment'),
+        note: extract('.note-abc'),
+      })
     }
+  }
 
+  document.querySelector('button#yaml-download').onclick = () => {
+    updateData()
     const text = yaml.dump(data)
     downloadString(text, 'text/yaml', 'data.yaml')
+  }
+
+  document.querySelector('button#yaml-save').onclick = async () => {
+    updateData()
+    const text = yaml.dump(data)
+    const response = await fetch('data.yaml', {
+      method: 'POST',
+      body: text,
+    })
+    console.log(await response.text())
   }
 }
 
