@@ -14,8 +14,8 @@ students:
     gender: M
     email: adrien.bancet@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: Pas de travail rendu.
+    note: Z
     extraComment: ''
   - names: Louis,BIOUSSE
     birthday: 04/07/2001
