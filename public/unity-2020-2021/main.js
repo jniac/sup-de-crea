@@ -21,19 +21,32 @@ const update = (data) => {
 
   const mainElement = document.querySelector('main')
   const editable = window.location.href.includes('localhost')
+
+  const header = html/* html */`
+    <div class="student row header">
+      <div class="sort-button name last">Nom</div>
+      <div class="sort-button name first">Prénom</div>
+      <div class="link">projet github</div>
+      <div class="comment">commentaire</div>
+      <div class="extra-comment"></div>
+      <div class="sort-button note note-abc">note ABC</div>
+      <div class="note note-20">/20</div>
+    </div>
+  `
+  mainElement.append(header)
   
   for (const student of data.students) {
     const { email, names, link, comment, note, extraComment } = student
     const [firstname, lastname] = names.split(/\s*,\s*/)
     const div = html/* html */`
       <div class="student row" data-email="${email}">
-        <div contenteditable="${false}" class="name first">${firstname}</div>
         <div contenteditable="${false}" class="name last">${lastname}</div>
+        <div contenteditable="${false}" class="name first">${firstname}</div>
         <div contenteditable="${editable && !link}" class="link"><a href="${link}">${link}</a></div>
         <div contenteditable="${editable}" class="comment">${comment.replace('\n', '<br>')}</div>
         <div contenteditable="${editable}" class="extra-comment">${extraComment}</div>
-        <div contenteditable="${editable}" class="note-abc">${note}</div>
-        <div contenteditable="${editable}" class="note-20">${noteTable(note)}/20</div>
+        <div contenteditable="${editable}" class="note note-abc">${note}</div>
+        <div contenteditable="${editable}" class="note note-20">${noteTable(note)}/20</div>
       </div>
     `
     div.classList.toggle('has-extra-comment', !!extraComment)
@@ -66,7 +79,7 @@ const main = async () => {
   const getStudentByEmail = (email) => data.students.find(student => student.email === email)
 
   const updateData = () => {
-    for (const div of document.querySelectorAll('.student')) {
+    for (const div of document.querySelectorAll('.student:not(.header)')) {
       const { email } = div.dataset
       const student = getStudentByEmail(email)
       const extract = (cls) => div.querySelector(cls).innerText
@@ -93,6 +106,12 @@ const main = async () => {
       body: text,
     })
     console.log(await response.text())
+    
+    if (response.status === 200) {
+      setTimeout(() => {
+        window.location.reload()
+      }, 400)
+    }
   }
 }
 

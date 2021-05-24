@@ -13,6 +13,10 @@ main {
   --border: #ccc solid 1px;
   border: var(--border);
 }
+main .student.header .sort-button {
+  user-select: none;
+  cursor: pointer;
+}
 main .student {
   height: 100px;
   align-items: stretch;
@@ -40,9 +44,6 @@ main .student .link {
   overflow: hidden;
   line-break: anywhere;
 }
-main .student .link:hover {
-  color: blue;
-}
 main .student .comment {
   text-align: center;
 }
@@ -50,7 +51,7 @@ main .student .extra-comment {
   text-align: center;
   flex: 0;
 }
-main .student [class^="note"] {
+main .student .note {
   flex: 0 0 60px;
 }
 main .student .note-abc {
