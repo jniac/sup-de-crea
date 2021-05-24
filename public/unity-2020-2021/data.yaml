@@ -1,4 +1,22 @@
 students:
+  - names: Edward,AUGUSTIN
+    birthday: 13/08/2002
+    gender: M
+    email: edward.augustin@supdecreation.com
+    link: https://github.com/gustone1/New-Unity-Project-4-
+    comment: |-
+      Un tout début d'intention. Pas de design. Pas de code. Pas de textures.
+      Insuffisant en l'état.
+    note: C
+    extraComment: ''
+  - names: Adrien,BANCET
+    birthday: 02/10/2001
+    gender: M
+    email: adrien.bancet@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
   - names: Louis,BIOUSSE
     birthday: 04/07/2001
     gender: M
