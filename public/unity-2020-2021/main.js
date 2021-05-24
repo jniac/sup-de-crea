@@ -12,7 +12,7 @@ const noteTable = (note) => {
     case 'a': return '17'
     case 'b': return '14'
     case 'c': return '11'
-    case 'z': return '0'
+    case 'z': return '5'
     default: return '...'
   }
 }
@@ -27,7 +27,8 @@ const update = (data) => {
     const [firstname, lastname] = names.split(/\s*,\s*/)
     const div = html/* html */`
       <div class="student row" data-email="${email}">
-        <div contenteditable="${editable}" class="name">${firstname}</div>
+        <div contenteditable="${false}" class="name first">${firstname}</div>
+        <div contenteditable="${false}" class="name last">${lastname}</div>
         <div contenteditable="${editable && !link}" class="link"><a href="${link}">${link}</a></div>
         <div contenteditable="${editable}" class="comment">${comment.replace('\n', '<br>')}</div>
         <div contenteditable="${editable}" class="extra-comment">${extraComment}</div>
