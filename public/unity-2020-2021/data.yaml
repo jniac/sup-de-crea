@@ -54,8 +54,8 @@ students:
     gender: F
     email: yasmine.fanouni@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: Pas de travail rendu
+    note: Z
     extraComment: ''
   - names: Axel,FAUBERT
     birthday: 11/06/2002
@@ -72,9 +72,13 @@ students:
     birthday: 31/03/2001
     gender: M
     email: elliot.fenech@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
+    link: https://github.com/Sand-Fox/ElliotFenech
+    comment: >-
+      Hors-sujet, difficile de savoir ce qui relève du travail individuel.
+
+      Le code semble original, plutôt propre, s'il a entièrement été rédigé
+      c'est très bien... sauf que c'est hors-sujet.
+    note: C
     extraComment: ''
   - names: Killiane,GAUDAS
     birthday: 21/07/2002
@@ -142,7 +146,7 @@ students:
     birthday: 14/07/2002
     gender: M
     email: steven.ouk@supdecreation.com
-    comment: ''
-    note: ''
+    comment: Pas de travail rendu
+    note: Z
     extraComment: ''
     link: ''
