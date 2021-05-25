@@ -50,6 +50,7 @@ const update = (data) => {
       </div>
     `
     div.classList.toggle('has-extra-comment', !!extraComment)
+    div.classList.toggle('has-note-z', /^z$/i.test(note))
     mainElement.append(div)
   }
 }

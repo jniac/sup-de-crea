@@ -14,6 +14,9 @@ main.promo-table .student {
 main.promo-table .student.has-extra-comment {
   background-color: #ff9;
 } 
+main.promo-table .student.has-note-z {
+  background-color: #ff99a1;
+} 
 main.promo-table .student + .student {
   border-top: var(--border);
 }
