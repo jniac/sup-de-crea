@@ -39,7 +39,7 @@ main.promo-table .student .comment {
 }
 main.promo-table .student .extra-comment {
   text-align: center;
-  flex: 0;
+  flex: 0 0 140px;
 }
 main.promo-table .student .note {
   flex: 0 0 60px;

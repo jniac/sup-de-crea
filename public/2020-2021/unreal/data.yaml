@@ -3,103 +3,119 @@ students:
     birthday: 27/06/1999
     gender: M
     email: jason.chevalier@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
-    extraComment: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/JasonChevalier/
+    comment: >-
+      Un premier très bon travail (To The Temple), malheureusement le second est
+      absent.
+    note: B
+    extraComment: un travail non rendu (Surreal Valley)
   - names: COHEN,Kelly
     birthday: 25/02/2001
     gender: F
     email: kelly.cohen@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/Oulfoura/
+    comment: |-
+      Très bon travail de modélisation et de textures. Bcp d'expérimentations
+      2 travaux rendus. Excellent.
+    note: A+
     extraComment: ''
   - names: FIGUEIREDO,Jean-Vianney
     birthday: 04/01/2001
     gender: M
     email: jeanvianney.figueiredo@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: >-
+      Très bon travail (quantité, soin), sens du détail, grande capacité de mise
+      en œuvre. Direction artistique originale et prometteuse. Excellent.
+    note: A+
     extraComment: ''
   - names: FRANCOIS,Mathias
     birthday: 05/04/2000
     gender: M
     email: mathias.francois@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: pas de rendus
+    note: Z
     extraComment: ''
   - names: GILLY,Eric
     birthday: 10/11/1999
     gender: M
     email: eric.gilly@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
-    extraComment: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/Eric/
+    comment: >-
+      Bon implication, un travail intéressant mais qui manque de détails. Bon
+      entrée en matière.
+    note: B
+    extraComment: un travail non rendu (Surreal Valley)
   - names: KOCKEROLS,Gwendal
     birthday: 20/07/1999
     gender: M
     email: gwendal.kockerols@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/Lorax/
+    comment: >-
+      Dans l'ensemble, les décors apparaissent un peu vides, manquent de
+      cohérence.
+
+      2 travaux rendus
+    note: B
     extraComment: ''
   - names: MARTINEZ,Damien
     birthday: 22/10/1999
     gender: M
     email: damien.martinez@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: pas de rendus
+    note: Z
     extraComment: ''
   - names: MARZAIS,Nicolas
     birthday: 18/08/2000
     gender: M
     email: nicolas.marzais@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: pas de rendus
+    note: Z
     extraComment: ''
   - names: PERRAUD,Yohan
     birthday: 14/10/2001
     gender: M
     email: yohan.perraud@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: pas de rendus
+    note: Z
     extraComment: ''
   - names: QUINIOU,Erwann
     birthday: 19/02/2001
     gender: M
     email: erwann.quiniou@supdecreation.com
     link: ''
-    comment: ''
-    note: ''
+    comment: pas de rendus
+    note: Z
     extraComment: ''
   - names: RAPINE,Léa
     birthday: 03/09/2001
     gender: F
     email: lea.rapine@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/LOliverLOnelyOne/
+    comment: "Bon travail. Dans l'ensemble les scènes restent un peu vides. Bonne implication en classe (présence, participation).\_\n2 travaux rendus"
+    note: A
     extraComment: ''
   - names: RAYMOND,Arthur
     birthday: 24/02/1996
     gender: M
     email: arthur.raymond@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
-    extraComment: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/Arty-Fils/
+    comment: >-
+      Un premier travail intéressant (jolie montagne, joli sentier). Dommage
+      qu'il manque un travail.
+    note: B
+    extraComment: un travail non rendu (Surreal Valley)
   - names: WYNANDS,Nathan
     birthday: 20/06/2002
     gender: M
     email: nathan.wynands@supdecreation.com
-    link: ''
-    comment: ''
-    note: ''
-    extraComment: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/Wynands80/
+    comment: >
+      Un travail entamé, mais qui paraît inachevé, il manque du détail,
+      l'ensemble manque de soins.
+    note: C
+    extraComment: un travail non rendu (Surreal Valley)
