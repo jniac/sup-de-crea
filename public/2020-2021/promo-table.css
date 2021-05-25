@@ -1,62 +1,52 @@
-@import url(../style/style.css);
-
-body {
-  padding: 0;
-}
-
-header, footer {
-  padding: 64px;
-}
-
-main {
+main.promo-table {
   margin: 16px;
   --border: #ccc solid 1px;
   border: var(--border);
 }
-main .student.header .sort-button {
+main.promo-table .student.header .sort-button {
   user-select: none;
   cursor: pointer;
 }
-main .student {
+main.promo-table .student {
   height: 100px;
   align-items: stretch;
 } 
-main .student.has-extra-comment {
+main.promo-table .student.has-extra-comment {
   background-color: #ff9;
 } 
-main .student + .student {
+main.promo-table .student + .student {
   border-top: var(--border);
 }
-main .student > div {
+main.promo-table .student > div {
   padding: 8px;
   text-align: center;
 }
-main .student > div + div {
+main.promo-table .student > div + div {
   border-left: var(--border);
 }
 
-main .student .name {
+main.promo-table .student .name {
   flex: 0 0 160px;
 }
-main .student .link {
+main.promo-table .student .link {
   font-size: 10px;
   flex: 0 0 200px;
   overflow: hidden;
   line-break: anywhere;
 }
-main .student .comment {
+main.promo-table .student .comment {
   text-align: center;
 }
-main .student .extra-comment {
+main.promo-table .student .extra-comment {
   text-align: center;
   flex: 0;
 }
-main .student .note {
+main.promo-table .student .note {
   flex: 0 0 60px;
 }
-main .student .note-abc {
+main.promo-table .student .note-abc {
   font-size: 16px;
 }
-main .student .note-20 {
+main.promo-table .student .note-20 {
   font-size: 10px;
 }

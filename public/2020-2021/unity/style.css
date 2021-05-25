@@ -1,0 +1,10 @@
+@import url(../../style/style.css);
+@import url(../promo-table.css);
+
+body {
+  padding: 0;
+}
+
+header, footer {
+  padding: 64px;
+}
