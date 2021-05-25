@@ -1,0 +1,105 @@
+students:
+  - names: CHEVALIER,Jason
+    birthday: 27/06/1999
+    gender: M
+    email: jason.chevalier@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: COHEN,Kelly
+    birthday: 25/02/2001
+    gender: F
+    email: kelly.cohen@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: FIGUEIREDO,Jean-Vianney
+    birthday: 04/01/2001
+    gender: M
+    email: jeanvianney.figueiredo@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: FRANCOIS,Mathias
+    birthday: 05/04/2000
+    gender: M
+    email: mathias.francois@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: GILLY,Eric
+    birthday: 10/11/1999
+    gender: M
+    email: eric.gilly@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: KOCKEROLS,Gwendal
+    birthday: 20/07/1999
+    gender: M
+    email: gwendal.kockerols@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: MARTINEZ,Damien
+    birthday: 22/10/1999
+    gender: M
+    email: damien.martinez@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: MARZAIS,Nicolas
+    birthday: 18/08/2000
+    gender: M
+    email: nicolas.marzais@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: PERRAUD,Yohan
+    birthday: 14/10/2001
+    gender: M
+    email: yohan.perraud@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: QUINIOU,Erwann
+    birthday: 19/02/2001
+    gender: M
+    email: erwann.quiniou@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: RAPINE,Léa
+    birthday: 03/09/2001
+    gender: F
+    email: lea.rapine@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: RAYMOND,Arthur
+    birthday: 24/02/1996
+    gender: M
+    email: arthur.raymond@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''
+  - names: WYNANDS,Nathan
+    birthday: 20/06/2002
+    gender: M
+    email: nathan.wynands@supdecreation.com
+    link: ''
+    comment: ''
+    note: ''
+    extraComment: ''

@@ -8,7 +8,7 @@ main.promo-table .student.header .sort-button {
   cursor: pointer;
 }
 main.promo-table .student {
-  height: 100px;
+  height: 80px;
   align-items: stretch;
 } 
 main.promo-table .student.has-extra-comment {
