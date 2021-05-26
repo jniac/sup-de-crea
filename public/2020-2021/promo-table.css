@@ -1,6 +1,6 @@
 main.promo-table {
   margin: 16px;
-  --border: #ccc solid 1px;
+  --border: #e7e7e7 solid 1px;
   border: var(--border);
 }
 main.promo-table .student.header .sort-button {
@@ -15,7 +15,8 @@ main.promo-table .student.has-extra-comment {
   background-color: #ff9;
 } 
 main.promo-table .student.has-note-z {
-  background-color: #ff99a1;
+  background-color: #ffdadd;
+  color: #f30045;
 } 
 main.promo-table .student + .student {
   border-top: var(--border);
