@@ -78,10 +78,14 @@ students:
     birthday: 14/10/2001
     gender: M
     email: yohan.perraud@supdecreation.com
-    link: ''
-    comment: pas de rendus
-    note: Z
-    extraComment: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/YohanPerraud/
+    comment: >-
+      Des difficultés techniques (mauvaise connexion) ont entraîné des
+      difficultés à suivre le cours.
+
+      Il en résulte un rendu passable.
+    note: C
+    extraComment: un travail non rendu (Surreal Valley)
   - names: QUINIOU,Erwann
     birthday: 19/02/2001
     gender: M
