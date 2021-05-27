@@ -2,14 +2,24 @@ import yaml from '../lib/js-yaml.js'
 import html from '../src/html.js'
 import { windowLoad } from '../src/utils.js'
 
-
 const loadData = async () => {
   const data = yaml.load(await (await fetch('./data.yaml')).text())
+  assignFirstAndLastNames(data)
+  return data
+}
+
+const assignFirstAndLastNames = (data) => {
   for (const student of data.students) {
     const [firstname, lastname] = student.names.split(/\s*,\s*/)
     Object.assign(student, { firstname, lastname })
   }
-  return data
+}
+
+const deleteFirstAndLastNames = (data) => {
+  for (const student of data.students) {
+    delete student.firstname
+    delete student.lastname
+  }
 }
 
 const noteTable = (note) => {
@@ -146,6 +156,8 @@ const main = async () => {
 
   document.querySelector('button#yaml-save').onclick = async () => {
     updateData()
+    deleteFirstAndLastNames(data)
+    
     const text = yaml.dump(data)
     const response = await fetch('data.yaml', {
       method: 'POST',
