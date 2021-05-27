@@ -3,7 +3,14 @@ import html from '../src/html.js'
 import { windowLoad } from '../src/utils.js'
 
 
-const loadData = async () => yaml.load(await (await fetch('./data.yaml')).text())
+const loadData = async () => {
+  const data = yaml.load(await (await fetch('./data.yaml')).text())
+  for (const student of data.students) {
+    const [firstname, lastname] = student.names.split(/\s*,\s*/)
+    Object.assign(student, { firstname, lastname })
+  }
+  return data
+}
 
 const noteTable = (note) => {
   note = String(note).toLowerCase()
@@ -17,7 +24,7 @@ const noteTable = (note) => {
   }
 }
 
-const update = (data) => {
+const buildTable = (data) => {
 
   const mainElement = document.querySelector('main')
   const editable = window.location.href.includes('localhost')
@@ -35,9 +42,47 @@ const update = (data) => {
   `
   mainElement.append(header)
   
+  const header2 = html/* html */`
+    <div class="student row header copy">
+      <div class="sort-button name last">
+        <button>copy</button>
+      </div>
+      <div class="sort-button name first">
+        <button>copy</button>
+      </div>
+      <div class="link">
+        <button>copy</button>
+      </div>
+      <div class="comment">
+        <button>copy</button>
+      </div>
+      <div class="extra-comment">
+        <button>copy</button>        
+      </div>
+      <div class="sort-button note note-abc">
+        <button>copy</button>
+      </div>
+      <div class="note note-20">
+        <button>copy</button>        
+      </div>
+    </div>
+  `
+  header2.addEventListener('click', (e) => {
+    if (/button/i.test(e.target.tagName)) {
+      const node = e.target.parentElement
+      const nodeIndex = [...node.parentElement.children].indexOf(node)
+      const rows = [...document.querySelectorAll('.promo-table > *')].slice(2)
+      const str = 
+        rows.map(row => row.children[nodeIndex].innerText)
+        .map(str => str.replace('/20', ''))
+        .join('\n')
+      console.log(str)
+    }
+  })
+  mainElement.append(header2)
+  
   for (const student of data.students) {
-    const { email, names, link, comment, note, extraComment } = student
-    const [firstname, lastname] = names.split(/\s*,\s*/)
+    const { email, firstname, lastname, link, comment, note, extraComment } = student
     const div = html/* html */`
       <div class="student row" data-email="${email}">
         <div contenteditable="${false}" class="name last">${lastname}</div>
@@ -46,7 +91,7 @@ const update = (data) => {
         <div contenteditable="${editable}" class="comment">${comment.replace('\n', '<br>')}</div>
         <div contenteditable="${editable}" class="extra-comment">${extraComment}</div>
         <div contenteditable="${editable}" class="note note-abc">${note}</div>
-        <div contenteditable="${editable}" class="note note-20">${noteTable(note)}/20</div>
+        <div contenteditable="${editable}" class="note note-20">${noteTable(note)}</div>
       </div>
     `
     div.classList.toggle('has-extra-comment', !!extraComment)
@@ -75,7 +120,7 @@ const main = async () => {
   const data = await loadData()
   await windowLoad()
 
-  update(data)
+  buildTable(data)
 
   const getStudentByEmail = (email) => data.students.find(student => student.email === email)
 
