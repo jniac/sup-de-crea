@@ -31,10 +31,13 @@ students:
     birthday: 05/04/2000
     gender: M
     email: mathias.francois@supdecreation.com
-    link: ''
-    comment: pas de rendus
-    note: Z
-    extraComment: ''
+    link: travail rendu sur Discord
+    comment: >-
+      Un travail paraissant inachevé, trahissant sans doute certaines
+      difficultés avec l'interface. Il ne faut se laisser décourager par la
+      complexité des logiciels.
+    note: C
+    extraComment: un travail non rendu (Surreal Valley)
   - names: GILLY,Eric
     birthday: 10/11/1999
     gender: M
@@ -83,10 +86,13 @@ students:
     birthday: 19/02/2001
     gender: M
     email: erwann.quiniou@supdecreation.com
-    link: ''
-    comment: pas de rendus
-    note: Z
-    extraComment: ''
+    link: https://jniac.github.io/supdecrea-unreal-2021/public/Eldartt/
+    comment: >-
+      Un travail qui semble un peu laborieux. Bonne entrée en matière, mais il
+      reste encore à acquérir de l'aisance, pour permettre à l'inspiration de
+      s'exprimer.
+    note: B
+    extraComment: un travail non rendu (Surreal Valley)
   - names: RAPINE,Léa
     birthday: 03/09/2001
     gender: F
