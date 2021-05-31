@@ -3,12 +3,11 @@ students:
     birthday: 27/06/1999
     gender: M
     email: jason.chevalier@supdecreation.com
-    firstname: CHEVALIER
-    lastname: Jason
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A
+        comment: Bonne participation
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/JasonChevalier/
         comment: "Un très bon premier\_travail : architecture, végétation, éclairage (clair / obscur) etc.\_Malheureusement le second est absent."
@@ -18,12 +17,11 @@ students:
     birthday: 25/02/2001
     gender: F
     email: kelly.cohen@supdecreation.com
-    firstname: COHEN
-    lastname: Kelly
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A
+        comment: Bonne participation malgré un commencement difficile.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/Oulfoura/
         comment: >-
@@ -37,12 +35,11 @@ students:
     birthday: 04/01/2001
     gender: M
     email: jeanvianney.figueiredo@supdecreation.com
-    firstname: FIGUEIREDO
-    lastname: Jean-Vianney
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A+
+        comment: Excellente participation, volontaire, présent.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/JVY-creator/
         comment: >-
@@ -55,12 +52,11 @@ students:
     birthday: 05/04/2000
     gender: M
     email: mathias.francois@supdecreation.com
-    firstname: FRANCOIS
-    lastname: Mathias
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: B
+        comment: Discret en classe.
       - name: unreal, landscape & materials
         link: travail rendu sur Discord
         comment: >-
@@ -73,12 +69,11 @@ students:
     birthday: 10/11/1999
     gender: M
     email: eric.gilly@supdecreation.com
-    firstname: GILLY
-    lastname: Eric
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: B
+        comment: Discret en classe.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/Eric/
         comment: "Bon implication, un travail intéressant mais qui manque de détails. Bon entrée en matière.\_Il manque le second travail."
@@ -88,12 +83,11 @@ students:
     birthday: 20/07/1999
     gender: M
     email: gwendal.kockerols@supdecreation.com
-    firstname: KOCKEROLS
-    lastname: Gwendal
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: B
+        comment: Trop discret ce second semestre en classe. C'est dommage.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/Lorax/
         comment: >-
@@ -107,12 +101,11 @@ students:
     birthday: 22/10/1999
     gender: M
     email: damien.martinez@supdecreation.com
-    firstname: MARTINEZ
-    lastname: Damien
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A
+        comment: Bonne participation.
       - name: unreal, landscape & materials
         link: ''
         comment: pas de rendus
@@ -122,12 +115,11 @@ students:
     birthday: 18/08/2000
     gender: M
     email: nicolas.marzais@supdecreation.com
-    firstname: MARZAIS
-    lastname: Nicolas
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: B
+        comment: Discret en classe.
       - name: unreal, landscape & materials
         link: ''
         comment: pas de rendus
@@ -137,12 +129,11 @@ students:
     birthday: 14/10/2001
     gender: M
     email: yohan.perraud@supdecreation.com
-    firstname: PERRAUD
-    lastname: Yohan
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A
+        comment: Bonne participation.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/YohanPerraud/
         comment: >-
@@ -156,12 +147,11 @@ students:
     birthday: 19/02/2001
     gender: M
     email: erwann.quiniou@supdecreation.com
-    firstname: QUINIOU
-    lastname: Erwann
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: B
+        comment: Discret en classe.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/Eldartt/
         comment: >-
@@ -174,12 +164,11 @@ students:
     birthday: 03/09/2001
     gender: F
     email: lea.rapine@supdecreation.com
-    firstname: RAPINE
-    lastname: Léa
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A+
+        comment: Excellente participation, volontaire, présent.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/LOliverLOnelyOne/
         comment: "Bon travail. Dans l'ensemble les scènes restent un peu vides. Bonne implication en classe (présence, participation).\_\n2 travaux rendus"
@@ -189,12 +178,11 @@ students:
     birthday: 24/02/1996
     gender: M
     email: arthur.raymond@supdecreation.com
-    firstname: RAYMOND
-    lastname: Arthur
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: A
+        comment: Bonne participation.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/Arty-Fils/
         comment: >-
@@ -206,12 +194,11 @@ students:
     birthday: 20/06/2002
     gender: M
     email: nathan.wynands@supdecreation.com
-    firstname: WYNANDS
-    lastname: Nathan
     evaluations:
       - name: participation
-        commentaire:
-        note:
+        commentaire: null
+        note: B
+        comment: Discret en classe.
       - name: unreal, landscape & materials
         link: https://jniac.github.io/supdecrea-unreal-2021/public/Wynands80/
         comment: >
