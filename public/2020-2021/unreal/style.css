@@ -8,3 +8,7 @@ body {
 header, footer {
   padding: 64px;
 }
+
+select {
+  margin-top: 16px;
+}

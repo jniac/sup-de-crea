@@ -20,45 +20,69 @@ import { drawTable, loadData, saveData, noteSwitch } from '../promo-table.js'
 
 const data = await loadData()
 
-const evaluationIndex = 1
+const select = document.querySelector('select')
+select.selectedIndex = /0/.test(window.location.hash) ? 0 : 1
+select.onchange = () => {
+  window.location.hash = select.selectedIndex
+  window.location.reload()
+}
 
-drawTable(data.students, [{
+const evaluationIndex = select.selectedIndex
+const getEval = student => student.evaluations[evaluationIndex]
+
+const firstColumns = [
+{
   title: 'Nom',
   cls: 'name first',
   value: s => s.firstname,
-}, {
+}, 
+{
   title: 'Prénom',
   cls: 'name last',
   value: s => s.lastname,
-}, {
-  title: 'lien',
-  cls: 'link',
-  editable: true,
-  value: s => `<a href="${s.link}">${s.evaluations[evaluationIndex].link}</a>`,
-}, {
-  title: 'commentaire',
-  cls: 'comment',
-  editable: true,
-  value: s => s.evaluations[evaluationIndex].comment,
-}, {
-  title: 'extra commentaire',
-  cls: 'extra-comment',
-  editable: true,
-  value: s => s.evaluations[evaluationIndex].extraComment,
-}, {
-  title: 'note',
-  cls: 'note note-abc',
-  editable: true,
-  value: s => s.evaluations[evaluationIndex].note,
-}, {
-  title: '/20',
-  cls: 'note note-20',
-  editable: true,
-  value: s => noteSwitch(s.evaluations[evaluationIndex].note),
-}], {
+}]
+
+drawTable(data.students, [...firstColumns, 
+  evaluationIndex === 1 && {
+    title: 'lien',
+    cls: 'link',
+    editable: true,
+    value: s => `<a href="${s.link}">${getEval(s).link}</a>`,
+  },
+  {
+    title: 'commentaire',
+    cls: 'comment',
+    editable: true,
+    value: s => getEval(s).comment,
+    onValueChange: (s, value) => getEval(s).comment = value,
+  },
+  evaluationIndex === 1 && {
+    title: 'extra commentaire',
+    cls: 'extra-comment',
+    editable: true,
+    value: s => getEval(s).extraComment,
+    onValueChange: (s, value) => getEval(s).extraComment = value,
+  },
+  {
+    title: 'note',
+    cls: 'note note-abc',
+    editable: true,
+    value: s => getEval(s).note,
+    onValueChange: (s, value) => getEval(s).note = value,
+  },
+  {
+    title: '/20',
+    cls: 'note note-20',
+    value: s => noteSwitch(getEval(s).note),
+  }
+], {
   transformRow: (s, row) => {
     const { extraComment, note } = s.evaluations[evaluationIndex]
     row.classList.toggle('has-extra-comment', !!extraComment)
     row.classList.toggle('has-note-z', /^z$/i.test(note))
   },
 })
+
+document.querySelector('button#yaml-save').onclick = async () => {
+  saveData(data)
+}

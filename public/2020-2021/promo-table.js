@@ -10,7 +10,9 @@ export const loadData = async (url = 'data.yaml') => {
 }
 
 export const saveData = async (data, url = 'data.yaml') => {
+  deleteFirstAndLastNames(data)
   const text = yaml.dump(data)
+  assignFirstAndLastNames(data)
   const response = await fetch(url, {
     method: 'POST',
     body: text,
@@ -18,14 +20,14 @@ export const saveData = async (data, url = 'data.yaml') => {
   console.log(await response.text())
 }
 
-const assignFirstAndLastNames = (data) => {
+export const assignFirstAndLastNames = (data) => {
   for (const student of data.students) {
     const [firstname, lastname] = student.names.split(/\s*,\s*/)
     Object.assign(student, { firstname, lastname })
   }
 }
 
-const deleteFirstAndLastNames = (data) => {
+export const deleteFirstAndLastNames = (data) => {
   for (const student of data.students) {
     delete student.firstname
     delete student.lastname
@@ -47,28 +49,61 @@ export const noteSwitch = (note) => {
 export const drawTable = (students, columns, {
   transformRow = (_, row) => row,
 }) => {
+  columns = columns.filter(column => !!column)
+
   const tableElement = document.querySelector('.promo-table')
   const headers = html`
     <div class="student row header">
-      ${columns.map(column => (
-        `<div class="${column.cls}">${column.title}</div>`
+      ${columns.map((column, index) => (
+        `<div class="${column.cls}" data-column-index=${index}>${column.title}</div>`
       )).join('\n')}
     </div>
   `
   tableElement.append(headers)
 
+  const copyHeaders = html`
+    <div class="student row header copy">
+      ${columns.map((column, index) => (
+        `<div class="${column.cls}" data-column-index=${index}>
+          <button>copy</button>
+        </div>`
+      )).join('\n')}
+    </div>
+  `
+  copyHeaders.addEventListener('click', (e) => {
+    if (/button/i.test(e.target.tagName)) {
+      const node = e.target.parentElement
+      const nodeIndex = [...node.parentElement.children].indexOf(node)
+      const rows = [...document.querySelectorAll('.promo-table > .row')].slice(2)
+      const str = 
+      rows.map(row => row.children[nodeIndex].innerText)
+      // .map(str => str.replace('/20', ''))
+      // .map(str => `"${str}"`)
+      .join('\n')
+      
+      console.log(str)
+      navigator.clipboard.writeText(str)
+    }
+  })
+  tableElement.append(copyHeaders)
+
   for (const student of students) {
     const { email } = student
     const row = html/* html */`
       <div class="student row" data-email="${email}">
-        ${columns.map(column => {
-          const value = column.value(student)
+        ${columns.map((column, index) => {
+          const value = column.value(student) || ''
           return (
-            `<div class="${column.cls}">${value}</div>`
+            `<div class="${column.cls}" contenteditable="${column.editable}"} data-column-index=${index}>${value}</div>`
           )
         }).join('\n')}
       </div>
     `
+    row.addEventListener('input', event => {
+      const value = event.target.innerText
+      const index = event.target.dataset.columnIndex
+      columns[index].onValueChange?.(student, value)
+    })
     tableElement.append(transformRow(student, row) || row)
   }
 }
