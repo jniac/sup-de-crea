@@ -1,1 +1,3 @@
-import '../promo-table.js'
+import { initTable } from '../promo-table.js'
+
+initTable()

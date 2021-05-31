@@ -3,10 +3,19 @@ import html from '../src/html.js'
 import { windowLoad } from '../src/utils.js'
 import { initHover } from './promo-table-hover.js'
 
-const loadData = async () => {
-  const data = yaml.load(await (await fetch('./data.yaml')).text())
+export const loadData = async (url = 'data.yaml') => {
+  const data = yaml.load(await (await fetch(url)).text())
   assignFirstAndLastNames(data)
   return data
+}
+
+export const saveData = async (data, url = 'data.yaml') => {
+  const text = yaml.dump(data)
+  const response = await fetch(url, {
+    method: 'POST',
+    body: text,
+  })
+  console.log(await response.text())
 }
 
 const assignFirstAndLastNames = (data) => {
@@ -23,7 +32,7 @@ const deleteFirstAndLastNames = (data) => {
   }
 }
 
-const noteTable = (note) => {
+export const noteSwitch = (note) => {
   note = String(note).toLowerCase()
   switch(note) {
     case 'a+': return '20'
@@ -32,6 +41,35 @@ const noteTable = (note) => {
     case 'c': return '11'
     case 'z': return '5'
     default: return '...'
+  }
+}
+
+export const drawTable = (students, columns, {
+  transformRow = (_, row) => row,
+}) => {
+  const tableElement = document.querySelector('.promo-table')
+  const headers = html`
+    <div class="student row header">
+      ${columns.map(column => (
+        `<div class="${column.cls}">${column.title}</div>`
+      )).join('\n')}
+    </div>
+  `
+  tableElement.append(headers)
+
+  for (const student of students) {
+    const { email } = student
+    const row = html/* html */`
+      <div class="student row" data-email="${email}">
+        ${columns.map(column => {
+          const value = column.value(student)
+          return (
+            `<div class="${column.cls}">${value}</div>`
+          )
+        }).join('\n')}
+      </div>
+    `
+    tableElement.append(transformRow(student, row) || row)
   }
 }
 
@@ -104,7 +142,7 @@ const buildTable = (data) => {
         <div contenteditable="${editable}" class="comment">${comment.replace('\n', '<br>')}</div>
         <div contenteditable="${editable}" class="extra-comment">${extraComment}</div>
         <div contenteditable="${editable}" class="note note-abc">${note}</div>
-        <div contenteditable="${editable}" class="note note-20">${noteTable(note)}</div>
+        <div contenteditable="${editable}" class="note note-20">${noteSwitch(note)}</div>
       </div>
     `
     div.classList.toggle('has-extra-comment', !!extraComment)
@@ -130,7 +168,7 @@ const downloadString =  (text, fileType, fileName) => {
 }
 
 
-const main = async () => {
+export const initTable = async () => {
 
   const data = await loadData()
   await windowLoad()
@@ -177,5 +215,3 @@ const main = async () => {
     }
   }
 }
-
-main()

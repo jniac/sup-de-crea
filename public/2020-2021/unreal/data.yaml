@@ -3,125 +3,219 @@ students:
     birthday: 27/06/1999
     gender: M
     email: jason.chevalier@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/JasonChevalier/
-    comment: "Un très bon premier\_travail : architecture, végétation, éclairage (clair / obscur) etc.\_Malheureusement le second est absent."
-    note: B
-    extraComment: un travail non rendu (Surreal Valley)
+    firstname: CHEVALIER
+    lastname: Jason
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/JasonChevalier/
+        comment: "Un très bon premier\_travail : architecture, végétation, éclairage (clair / obscur) etc.\_Malheureusement le second est absent."
+        extraComment: un travail non rendu (Surreal Valley)
+        note: B
   - names: COHEN,Kelly
     birthday: 25/02/2001
     gender: F
     email: kelly.cohen@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/Oulfoura/
-    comment: |-
-      Très bon travail de modélisation et de textures. Bcp d'expérimentations
-      2 travaux rendus. Excellent.
-    note: A+
-    extraComment: ''
+    firstname: COHEN
+    lastname: Kelly
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/Oulfoura/
+        comment: >-
+          Très bon travail de modélisation et de textures. Bcp
+          d'expérimentations
+
+          2 travaux rendus. Excellent.
+        extraComment: ''
+        note: A+
   - names: FIGUEIREDO,Jean-Vianney
     birthday: 04/01/2001
     gender: M
     email: jeanvianney.figueiredo@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/JVY-creator/
-    comment: >-
-      Très bon travail (quantité, soin), sens du détail, grande capacité de mise
-      en œuvre. Direction artistique originale et prometteuse. Excellent.
-    note: A+
-    extraComment: ''
+    firstname: FIGUEIREDO
+    lastname: Jean-Vianney
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/JVY-creator/
+        comment: >-
+          Très bon travail (quantité, soin), sens du détail, grande capacité de
+          mise en œuvre. Direction artistique originale et prometteuse.
+          Excellent.
+        extraComment: ''
+        note: A+
   - names: FRANCOIS,Mathias
     birthday: 05/04/2000
     gender: M
     email: mathias.francois@supdecreation.com
-    link: travail rendu sur Discord
-    comment: >-
-      Un travail paraissant inachevé, trahissant sans doute certaines
-      difficultés avec l'interface. Il ne faut se laisser décourager par la
-      complexité des logiciels.
-    note: C
-    extraComment: un travail non rendu (Surreal Valley)
+    firstname: FRANCOIS
+    lastname: Mathias
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: travail rendu sur Discord
+        comment: >-
+          Un travail paraissant inachevé, trahissant sans doute certaines
+          difficultés avec l'interface. Il ne faut se laisser décourager par la
+          complexité des logiciels.
+        extraComment: un travail non rendu (Surreal Valley)
+        note: C
   - names: GILLY,Eric
     birthday: 10/11/1999
     gender: M
     email: eric.gilly@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/Eric/
-    comment: "Bon implication, un travail intéressant mais qui manque de détails. Bon entrée en matière.\_Il manque le second travail."
-    note: B
-    extraComment: un travail non rendu (Surreal Valley)
+    firstname: GILLY
+    lastname: Eric
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/Eric/
+        comment: "Bon implication, un travail intéressant mais qui manque de détails. Bon entrée en matière.\_Il manque le second travail."
+        extraComment: un travail non rendu (Surreal Valley)
+        note: B
   - names: KOCKEROLS,Gwendal
     birthday: 20/07/1999
     gender: M
     email: gwendal.kockerols@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/Lorax/
-    comment: >-
-      Dans l'ensemble, les décors apparaissent un peu vides, manquent de
-      cohérence.
+    firstname: KOCKEROLS
+    lastname: Gwendal
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/Lorax/
+        comment: >-
+          Dans l'ensemble, les décors apparaissent un peu vides, manquent de
+          cohérence.
 
-      2 travaux rendus
-    note: B
-    extraComment: ''
+          2 travaux rendus
+        extraComment: ''
+        note: B
   - names: MARTINEZ,Damien
     birthday: 22/10/1999
     gender: M
     email: damien.martinez@supdecreation.com
-    link: ''
-    comment: pas de rendus
-    note: Z
-    extraComment: ''
+    firstname: MARTINEZ
+    lastname: Damien
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: ''
+        comment: pas de rendus
+        extraComment: ''
+        note: Z
   - names: MARZAIS,Nicolas
     birthday: 18/08/2000
     gender: M
     email: nicolas.marzais@supdecreation.com
-    link: ''
-    comment: pas de rendus
-    note: Z
-    extraComment: ''
+    firstname: MARZAIS
+    lastname: Nicolas
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: ''
+        comment: pas de rendus
+        extraComment: ''
+        note: Z
   - names: PERRAUD,Yohan
     birthday: 14/10/2001
     gender: M
     email: yohan.perraud@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/YohanPerraud/
-    comment: >-
-      Des difficultés techniques (mauvaise connexion) ont entraîné des
-      difficultés à suivre le cours.
+    firstname: PERRAUD
+    lastname: Yohan
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/YohanPerraud/
+        comment: >-
+          Des difficultés techniques (mauvaise connexion) ont entraîné des
+          difficultés à suivre le cours.
 
-      Il en résulte un rendu passable.
-    note: C
-    extraComment: un travail non rendu (Surreal Valley)
+          Il en résulte un rendu passable.
+        extraComment: un travail non rendu (Surreal Valley)
+        note: C
   - names: QUINIOU,Erwann
     birthday: 19/02/2001
     gender: M
     email: erwann.quiniou@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/Eldartt/
-    comment: >-
-      Un travail qui semble un peu laborieux. Bonne entrée en matière, mais il
-      reste encore à acquérir de l'aisance, pour permettre à l'inspiration de
-      s'exprimer.
-    note: B
-    extraComment: un travail non rendu (Surreal Valley)
+    firstname: QUINIOU
+    lastname: Erwann
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/Eldartt/
+        comment: >-
+          Un travail qui semble un peu laborieux. Bonne entrée en matière, mais
+          il reste encore à acquérir de l'aisance, pour permettre à
+          l'inspiration de s'exprimer.
+        extraComment: un travail non rendu (Surreal Valley)
+        note: B
   - names: RAPINE,Léa
     birthday: 03/09/2001
     gender: F
     email: lea.rapine@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/LOliverLOnelyOne/
-    comment: "Bon travail. Dans l'ensemble les scènes restent un peu vides. Bonne implication en classe (présence, participation).\_\n2 travaux rendus"
-    note: A
-    extraComment: ''
+    firstname: RAPINE
+    lastname: Léa
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/LOliverLOnelyOne/
+        comment: "Bon travail. Dans l'ensemble les scènes restent un peu vides. Bonne implication en classe (présence, participation).\_\n2 travaux rendus"
+        extraComment: ''
+        note: A
   - names: RAYMOND,Arthur
     birthday: 24/02/1996
     gender: M
     email: arthur.raymond@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/Arty-Fils/
-    comment: >-
-      Un premier travail intéressant (jolie montagne, joli sentier). Dommage
-      qu'il manque un travail.
-    note: B
-    extraComment: un travail non rendu (Surreal Valley)
+    firstname: RAYMOND
+    lastname: Arthur
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/Arty-Fils/
+        comment: >-
+          Un premier travail intéressant (jolie montagne, joli sentier). Dommage
+          qu'il manque un travail.
+        extraComment: un travail non rendu (Surreal Valley)
+        note: B
   - names: WYNANDS,Nathan
     birthday: 20/06/2002
     gender: M
     email: nathan.wynands@supdecreation.com
-    link: https://jniac.github.io/supdecrea-unreal-2021/public/Wynands80/
-    comment: >
-      Un travail entamé, mais qui paraît inachevé, il manque du détail,
-      l'ensemble manque de soins. Il manque le second travail.
-    note: C
-    extraComment: un travail non rendu (Surreal Valley)
+    firstname: WYNANDS
+    lastname: Nathan
+    evaluations:
+      - name: participation
+        commentaire:
+        note:
+      - name: unreal, landscape & materials
+        link: https://jniac.github.io/supdecrea-unreal-2021/public/Wynands80/
+        comment: >
+          Un travail entamé, mais qui paraît inachevé, il manque du détail,
+          l'ensemble manque de soins. Il manque le second travail.
+        extraComment: un travail non rendu (Surreal Valley)
+        note: C

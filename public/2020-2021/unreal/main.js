@@ -1,4 +1,5 @@
 import '../promo-table.js'
+import { drawTable, loadData, saveData, noteSwitch } from '../promo-table.js'
 
 // (await import('../initData.js')).initData(`Nom;Né(e) le;Sexe;E-mail;Heures manquées;;Entrée;Sortie
 // ;;;;Toutes;Mes cours;;
@@ -16,3 +17,48 @@ import '../promo-table.js'
 // "RAYMOND Arthur";"24/02/1996";"M";"arthur.raymond@supdecreation.com";"315h00 (12)";"00h00";"Début d'année";""
 // "WYNANDS Nathan";"20/06/2002";"M";"nathan.wynands@supdecreation.com";"30h00 (1)";"30h00 (1)";"Début d'année";""
 // `)
+
+const data = await loadData()
+
+const evaluationIndex = 1
+
+drawTable(data.students, [{
+  title: 'Nom',
+  cls: 'name first',
+  value: s => s.firstname,
+}, {
+  title: 'Prénom',
+  cls: 'name last',
+  value: s => s.lastname,
+}, {
+  title: 'lien',
+  cls: 'link',
+  editable: true,
+  value: s => `<a href="${s.link}">${s.evaluations[evaluationIndex].link}</a>`,
+}, {
+  title: 'commentaire',
+  cls: 'comment',
+  editable: true,
+  value: s => s.evaluations[evaluationIndex].comment,
+}, {
+  title: 'extra commentaire',
+  cls: 'extra-comment',
+  editable: true,
+  value: s => s.evaluations[evaluationIndex].extraComment,
+}, {
+  title: 'note',
+  cls: 'note note-abc',
+  editable: true,
+  value: s => s.evaluations[evaluationIndex].note,
+}, {
+  title: '/20',
+  cls: 'note note-20',
+  editable: true,
+  value: s => noteSwitch(s.evaluations[evaluationIndex].note),
+}], {
+  transformRow: (s, row) => {
+    const { extraComment, note } = s.evaluations[evaluationIndex]
+    row.classList.toggle('has-extra-comment', !!extraComment)
+    row.classList.toggle('has-note-z', /^z$/i.test(note))
+  },
+})
