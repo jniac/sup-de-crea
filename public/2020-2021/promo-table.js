@@ -1,6 +1,7 @@
 import yaml from '../lib/js-yaml.js'
 import html from '../src/html.js'
 import { windowLoad } from '../src/utils.js'
+import { initHover } from './promo-table-hover.js'
 
 const loadData = async () => {
   const data = yaml.load(await (await fetch('./data.yaml')).text())
@@ -81,12 +82,14 @@ const buildTable = (data) => {
     if (/button/i.test(e.target.tagName)) {
       const node = e.target.parentElement
       const nodeIndex = [...node.parentElement.children].indexOf(node)
-      const rows = [...document.querySelectorAll('.promo-table > *')].slice(2)
+      const rows = [...document.querySelectorAll('.promo-table > .row')].slice(2)
       const str = 
         rows.map(row => row.children[nodeIndex].innerText)
-        .map(str => str.replace('/20', ''))
+        // .map(str => str.replace('/20', ''))
+        // .map(str => `"${str}"`)
         .join('\n')
-      console.log(str)
+
+      navigator.clipboard.writeText(str)
     }
   })
   mainElement.append(header2)
@@ -108,6 +111,8 @@ const buildTable = (data) => {
     div.classList.toggle('has-note-z', /^z$/i.test(note))
     mainElement.append(div)
   }
+
+  initHover(mainElement)
 }
 
 const downloadString =  (text, fileType, fileName) => {

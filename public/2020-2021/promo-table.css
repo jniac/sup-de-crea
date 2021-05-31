@@ -62,3 +62,17 @@ main.promo-table .student .note-abc {
 main.promo-table .student .note-20 {
   font-size: 12px;
 }
+
+main.promo-table .hover-options {
+  position: absolute;
+  background-color: white;
+  padding: 8px;
+  user-select: none;
+  cursor: pointer;
+  border: var(--border);
+  font-size: 10px;
+}
+main.promo-table .hover-options:hover {
+  background-color: blue;
+  color: white;
+}
